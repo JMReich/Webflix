@@ -1,0 +1,54 @@
+.signup input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    
+}
+
+.signup input:focus {
+    outline: none;
+    border: 2px solid rgb(0, 213, 255);
+}
+
+.signup input[type="submit"] {
+    background-color: rgb(0, 213, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.bad-input {
+    border-bottom: 5px solid rgb(255, 0, 0);
+}
+
+
+.signup {
+    width: 100%;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: black;
+}
+
+.toggle-password {
+    cursor: pointer;
+}
+

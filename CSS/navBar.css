@@ -1,44 +1,187 @@
 
-.top-nav {
-    overflow: hidden;
-    background-color: #333;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.top-nav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+.nav-size {
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+.top-nav-div {
+    width: 100%;
+    
+    
+    margin: 0 auto;
+    
+    background-image: linear-gradient(to right, rgb(182, 0, 182) , rgb(175, 0, 64), rgb(220, 62, 0));
+}
+
+.top-nav-div .row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.top-nav-div .row-2 {
+    padding-left: 2rem ;
+}
+
+.top-nav-div .sign-in-up {
+    display: flex;
+    gap: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+.row-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-2 .checkout {
+    margin-right: 2rem;
+}
+
+
+
+.top-nav-div li {
+    list-style: none;
+    
+}
+
+.top-nav-div a {
     text-decoration: none;
-    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    
+    
 }
 
+.top-nav-div a:hover {
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    
+}
 
-
-/*https://www.w3schools.com/howto/howto_css_searchbar.asp*/
-
-
-
-
-
-
-
-
-.search-filters {
+header {
     position: relative;
-    display: inline-block;
+    padding: 0 2rem;
 }
 
-.search-filters .dropdown {
-    display: none;
+
+
+.top-nav-div .logo a {
+    font-size:calc(12px + 1.5vw);
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+.top-nav-div .links {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 5px;
+    margin-left: 2rem;
+}
+
+.top-nav-div .links li a {
+    font-size:calc(12px + 1.5vw);
+    padding-bottom: 3.5px;
+}
+
+.top-nav-div .toggle-button {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.underline {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+
+.search input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size:calc(8px + 1.5vw);
+    box-sizing: border-box;
+    border-radius: 2rem;
+    
+}
+
+.sign-in-up li a {
+    font-size:calc(12px + 1.5vw);
+    
+}
+
+.checkout i {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.search-wrapper {
+    position: relative;
+}
+
+.search-wrapper button {
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: none;
 }
 
-.search-filters:hover .dropdown {
-    display: block;
-}
+@media screen and (min-width: 1000px) {
+    .search input {
+      font-size: 22px;
+    }
+
+    .sign-in-up li a {
+        font-size:28px;
+        
+    }
+
+    .top-nav-div .logo a {
+        font-size:28px;
+
+    }
+
+    .top-nav-div .links li a {
+        font-size:28px;
+    }
+
+  }
+
+
+  @media screen and (max-width: 700px) {
+
+    .search input {
+        font-size: 16px;
+      }
+  
+    .sign-in-up li a {
+        font-size:20px;
+        
+    }
+
+    .top-nav-div .logo a {
+        font-size:20px;
+
+    }
+
+    .top-nav-div .links li a {
+        font-size:18px;
+    }
+
+  }
+

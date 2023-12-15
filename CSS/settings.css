@@ -1,0 +1,23 @@
+
+
+
+.settings-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.settings-button-container button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f5f5f5;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}

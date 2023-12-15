@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([0-9]+)$ movie_detail.php?name=$1&id=$2 [L]
+RewriteRule ^home index.php [L]
